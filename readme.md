@@ -65,8 +65,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):** https://www.hairstudiokarim.nl/
 
+- Waarom deze website?
+
+Waarom ik deze website gekozen is omdat ik de vorige keer bij deze kapper in de zaak was. Karim, de kapper, vertelde dat hij ontevreden was over zijn website en ik vertelde dat ik dit blok Front End zou gaan volgen. Het lijkt mij leuk om deze website te verbeteren omdat ik hem er ook mee kan helpen. 
+
+- Uitdagingen
+
+Ik ben zelf geen ster in coderen dus bij mij liggen de uitdagingen vrijwel overal. Vorig jaar heb ik bij Internetstandaarden geprobeerd mijn portfolio-website responsive te maken maar deze bleef haken bij 960px. Naast een responsive website krijgen, wil ik beter worden in het maken van een mooi formulier. In weze wil ik vooral stappen maken om een mooie surface laag neer te zetten die representatief is voor een professionele website. 
+
+
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/fullpagekarimwebsite.png)
 
 **Breakdown-schets(en):**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/hoofdstructuur.png) (images/gedetailleerd.png)
+
+
+In deze week heb ik een website uitgekozen. De HTML-code heb ik in de index gezet en morgen zullen we in de les aan de slag gaan met CSS om de website vorm te geven. 
+
+
+

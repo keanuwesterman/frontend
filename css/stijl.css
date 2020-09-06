@@ -1,0 +1,47 @@
+@font-face{
+	font-family: Montserrat;
+}
+
+/* Hier zorg ik dat de content in het midden blijft*/
+main section h1{
+	font-family: Montserrat;
+	letter-spacing: 7px;
+	  display:grid;
+  grid-auto-columns:min-content;
+  justify-content:center;
+  text-align:center;
+}
+
+
+
+
+/* responsive geprobeerd te maken maar wanneer ik dit inschakel, wordt deze code als eerste opgenomen.
+Wanneer ik het inschakel dan pakt hij meteen min-width: 960x; terwijl dit niet
+de bedoeling is. */
+/
+
+@media screen and (min-width: 480px) {
+header nav ul{
+padding: 2.5rem 0;
+}
+
+}
+
+@media screen and (min-width: 720px) {
+	header nav ul{
+		padding: 3rem 0;
+	}
+}
+
+
+@media screen and (min-width: 960px) {
+header nav ul{
+padding: 3.5rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1440px) {
+
+} */
