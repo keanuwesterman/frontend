@@ -3,32 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no"/>
     <link rel="stylesheet" href="css/stijl.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hairstudio Karim</title>
   </head>
 
 <body>
 	<!-- Hier stel ik mijn navigatiebalk op -->
 	<header>
+	<a href="index.html"><img src="images/logo.png" title="Hairstudiokarim" alt="logohairstudiokarim"></a>
   <nav>
+  	<div class="toggle">
+  		<i class="fa fa-bars menu" aria-hidden="true"></i>
+  	</div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="prijslijst.html">Prijslijst</a></li>
           <li><a href="boeken.html">Boek online</a></li>
           <li><a href="abbonementen.html">Abbonementen en prijzen</a></li>
         </ul>
-      </nav>
-		
-	</header>
+      </nav>		
+</header>
+
 
 	<!-- Hier begint main -->
 	<main>
 		<section>
-			<img src="images/karim.jpg" alt="foto van Karim" name="WELKOM">
+			<img src="images/karim.jpg" alt="foto van Karim" name="WELKOM" class="responsive" width="400" height="300">
 			<h1> WELKOM BIJ HAIRSTUDIO KARIM </h1>
 			<button>Bellen</button>
-
 		</section>
 
 		<section>
@@ -37,19 +42,28 @@
 		</section>
 
 		<section>
-			<img src="images/mannen.jpg" alt="mannenkapsel">
+		
+		<ul>
+			
+		<li id="z-index">
+			<img src="images/mannen.jpg" alt="mannenkapsel" class="responsive" width="400" height="300">
 			<h3>Mannen kapsels & baard</h3>
-		</section>
-
-		<section>
-			<img src="images/vrouwen.jpeg" alt="vrouwenkapsel">
+		</li>
+		<li>
+			<img src="images/vrouwen.jpeg" alt="vrouwenkapsel" class="responsive" width="400" height="300">
 			<h3>Vrouwen</h3>
+		</li>
+			
+		<li>
+			<img src="images/kinderen.jpeg" alt="kinderkapsel" class="responsive" width="400" height="300">
+			<h3>Kinderen</h3>
+		</li>
+	
+		</ul>
+
 		</section>
 
-		<section>
-			<img src="images/kinderen.jpeg" alt="kinderkapsel">
-			<h3>Kinderen</h3>
-		</section>
+	
 
 		<img src="images/zaak.jpg" alt="kapperszaak van binnen">
 
@@ -120,6 +134,7 @@
 
 	<!-- Hier footer -->
 	<footer>
+
 		
 	</footer>
 

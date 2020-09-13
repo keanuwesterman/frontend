@@ -1,8 +1,77 @@
-@font-face{
+*{
 	font-family: Montserrat;
 }
 
+body{
+	margin: 0;
+	padding:0;
+}
+
 /* Hier zorg ik dat de content in het midden blijft*/
+
+main{
+display:grid;
+  grid-auto-columns:min-content;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Hier begint de css voor de NAVIGATIE*/
+nav{
+	width: 100%;
+	background: #fff;
+}
+nav ul{
+	width: 80%;
+	margin:0 auto;
+	padding:0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding:20px;
+}
+ul li:hover{
+	background: #00CCD2;
+	text-decoration: none;
+}
+ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: white;
+	text-align: right;
+	box-sizing: border-box;
+	color: #00CCD2;
+	font-size: 30px;
+	display: none;
+}
+
+/* nav wordt hier responsive*/
+
+@media (max-width:720px)
+{
+	.toggle
+{
+	display: inline-block;
+}
+nav ul{
+	width: 100%;
+	display: none;
+}
+nav ul li {
+	display: block;
+	text-align: 
+}
+
+.active{
+	display: block;
+}
+
 main section h1{
 	font-family: Montserrat;
 	letter-spacing: 7px;
@@ -14,12 +83,55 @@ main section h1{
 
 
 
+fieldset {
+	position:absolute;
+}
+
+/* hier positioneer ik de list van mannen/vrouwen/kinder-kapsels */
+section li img{
+	border-radius: 10%;
+
+}
+
+ul li h3 {
+  position:absolute;
+  margin:0; padding:.5em;
+  font-size:1.5em;
+  font-weight:bold;
+  color:white;
+  background-color:#00CCD2;
+  box-shadow:.15em .15em .15em #FF7600;
+}
+/*
+#z-index {
+	position: relative;
+}
+
+#z-index ul li h3 {
+  position:absolute;
+  margin:0; padding:.5em;
+  font-size:1.5em;
+  font-weight:bold;
+  color:white;
+  background-color:#00CCD2;
+  box-shadow:.15em .15em .15em #FF7600;
+}
+
+/*hier maak ik de afbeeldingen van deze list responsive*/
+.responsive{
+	width: 100%
+	height:auto;
+}
+
+fieldset {
+	position:relative;
+}
 
 /* responsive geprobeerd te maken maar wanneer ik dit inschakel, wordt deze code als eerste opgenomen.
 Wanneer ik het inschakel dan pakt hij meteen min-width: 960x; terwijl dit niet
 de bedoeling is. */
-/
 
+/*
 @media screen and (min-width: 480px) {
 header nav ul{
 padding: 2.5rem 0;

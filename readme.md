@@ -7,10 +7,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+2. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table
 
+<!-- bronnen voor responsive nav -->
+3. https://www.youtube.com/watch?v=XZsuI5wyRzs
+4. https://www.bootstrapcdn.com/fontawesome/
+5. https://fontawesome.com/icons/bars?style=solid 
 
 
 ## Eindgesprek (week 7/8)
