@@ -1,5 +1,6 @@
 *{
 	font-family: Montserrat;
+
 }
 
 body{
@@ -26,65 +27,70 @@ nav ul{
 	margin:0 auto;
 	padding:0;
 }
-ul li{
+nav ul li{
 	list-style: none;
 	display: inline-block;
 	padding:20px;
 }
-ul li:hover{
+nav ul li:hover{
 	background: #00CCD2;
 	text-decoration: none;
 }
-ul li a{
+nav ul li a{
 	color: black;
 	text-decoration: none;
 }
 
-.toggle{
-	width: 100%;
-	padding: 10px 20px;
-	background: white;
-	text-align: right;
-	box-sizing: border-box;
+/*hier begint de css voor de main*/
+	
+
+.homepagina{
+	margin: 1em;
+	position: relative;
+} 
+
+.homepagina button{
+	padding:1em;
+	font-size: 1em;
+	border-radius: 12px;
+	border-style: none;
+	background-color: black;
 	color: #00CCD2;
-	font-size: 30px;
-	display: none;
+	letter-spacing: 0.1em;
 }
 
-/* nav wordt hier responsive*/
-
-@media (max-width:720px)
-{
-	.toggle
-{
-	display: inline-block;
-}
-nav ul{
-	width: 100%;
-	display: none;
-}
-nav ul li {
-	display: block;
-	text-align: 
+.homepagina button:hover{
+	background-color: #00CCD2;
+	color:white;
+	transition: 2s;
+	transform: rotate(360deg);
+    box-shadow:.15em .15em .15em black;
 }
 
-.active{
-	display: block;
-}
-
-main section h1{
-	font-family: Montserrat;
-	letter-spacing: 7px;
-	  display:grid;
-  grid-auto-columns:min-content;
+.homepagina h1 {
+	padding: 1em;
+	position:relative;
+    left:0.02em; right:1em; top:12em; bottom:1em;
+    font-size: 1.4em;
+  margin:0;
+  color:white;
+  background-color:#00CCD2;
+  display:flex;
   justify-content:center;
-  text-align:center;
+  align-items:center;
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
+  opacity: 80%;
 }
 
+.homepagina h1:hover{
+	background-color: black;
+	transition: 1s;
+	font-size: 1.7em;
+}
 
-
-fieldset {
-	position:absolute;
+#aanbod h2{
+	
 }
 
 /* hier positioneer ik de list van mannen/vrouwen/kinder-kapsels */
@@ -93,29 +99,90 @@ section li img{
 
 }
 
+ul li{
+	list-style-type: none;
+}
+
 ul li h3 {
-  position:absolute;
+  position:relative;
   margin:0; padding:.5em;
   font-size:1.5em;
   font-weight:bold;
   color:white;
+  border-radius: 12px;
   background-color:#00CCD2;
-  box-shadow:.15em .15em .15em #FF7600;
 }
-/*
+
+#midden{
+	position: relative;
+}
+
+#midden h3{
+	position:absolute;
+	left: 10px;
+	top: 0px;
+	right: 10px;
+	margin:0; padding:.5em;
+  color:white;
+  background-color:#00CCD2;
+    box-shadow:.15em .15em .15em black;
+    text-align: center;
+    	    	    opacity: 90%;
+
+
+}
+
+#centraal{
+	position: relative;
+}
+
+#centraal h3{
+	position:absolute;
+	left: 10px;
+	top: 0px;
+	right: 10px;
+	margin:0; padding:.5em;
+  color:white;
+  background-color:#00CCD2;
+    box-shadow:.15em .15em .15em black;
+    	    	    opacity: 90%;
+
+}
+/
 #z-index {
 	position: relative;
 }
 
 #z-index ul li h3 {
-  position:absolute;
+  position:relative;
   margin:0; padding:.5em;
   font-size:1.5em;
   font-weight:bold;
   color:white;
   background-color:#00CCD2;
-  box-shadow:.15em .15em .15em #FF7600;
 }
+
+#z-index h3:first-of-type {
+right:7em; top:4.45em;
+z-index: 10;
+	    box-shadow:.15em .15em .15em black;
+	    opacity: 90%;
+
+}
+
+#z-index h3:last-of-type {
+	 top:4.45em; left: 6em;
+	    box-shadow:.15em .15em .15em black;
+	    box-sizing: content-box;
+	    	    opacity: 90%;
+
+}
+
+table {
+	color: red;
+	justify-content: center;
+}
+
 
 /*hier maak ik de afbeeldingen van deze list responsive*/
 .responsive{
@@ -123,8 +190,9 @@ ul li h3 {
 	height:auto;
 }
 
-fieldset {
-	position:relative;
+fieldset{
+	background-color: red;
+
 }
 
 /* responsive geprobeerd te maken maar wanneer ik dit inschakel, wordt deze code als eerste opgenomen.

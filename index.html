@@ -1,19 +1,121 @@
-<!doctype html>
-<html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Naam van je site en/of pagina</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no"/>
+		<link rel="stylesheet" href="css/stijl.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Hairstudio Karim</title>
+	</head>
+	<body>
+		<!-- Hier stel ik mijn navigatiebalk op -->
+		<header>
+			<nav>
+				<a href="index.html"><img src="images/logo.png" title="Hairstudiokarim" alt="logohairstudiokarim"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="prijslijst.html">Prijslijst</a></li>
+					<li><a href="boeken.html">Boek online</a></li>
+					<li><a href="abbonementen.html">Abbonementen en prijzen</a></li>
+				</ul>
+			</nav>
+		</header>
 
-<body>
+		<!-- Hier begint main -->
+		<main>
+			<section class="homepagina">
+				<h1> WELKOM BIJ <br> HAIRSTUDIO KARIM </h1>
+				<img src="images/karim.jpg" alt="foto van Karim" name="WELKOM" class="responsive" >
+				<button>Boek nu je afspraak </button>
+			</section>
 
-	<script src="scripts/script.js"></script>
-</body>
-	
-</html>
+
+			<section id="aanbod">
+				<h2>Professionele diensten met langdurige resultaten</h2>
+				<p>Wat ik aanbied</p>
+			</section>
+			<section>
+				
+
+<!-- met z-index probeer ik de h3's uit mannen kapsels | & baard te positioneren-->
+				<ul>
+					<li id="z-index">
+						<h3>Mannen kapsels</h3>
+						<h3>& baard</h3>
+						<img src="images/mannen.jpg" alt="mannenkapsel" class="responsive" width="500" height="400">
+					</li>
+					<li>
+						<li id="centraal">
+							<h3>Vrouwen</h3>
+							<img src="images/vrouwen.jpeg" alt="vrouwenkapsel" class="responsive" width="500" height="400">
+						</li>
+						
+						<li>
+							<li id="midden">
+								<h3>Kinderen</h3>
+								<img src="images/kinderen.jpeg" alt="kinderkapsel" class="responsive" width="500" height="350">
+							</li>
+							
+						</ul>
+					</section>
+					
+					<img src="images/zaak.jpg" alt="kapperszaak van binnen">
+					<section>
+						<h2>Over jouw lokale kapper</h2>
+						<p>Hairstyling sinds 2000
+						In 2000 heb ik Hairstudio Karim opgericht om hoogwaardige haarverzorging te kunnen voorzien aan mijn trouwe klanten. In hartje De Pijp in Amsterdam bied ik haarverzorging aan voor een groot aantal tevreden klanten en tegen competitieve tarieven. Maak een afspraak voor een frisse en stralende look!</p>
+						<button>Neem contact op</button>
+					</section>
+					<section>
+						<h3>Openingstijden</h3>
+						<table>
+							<tr>
+								<th>Kom langs</th>
+							</tr>
+							<tr>
+								<td>Ma:</td>
+								<td>gesloten</td>
+							</tr>
+							<tr>
+								<td>Di t/m Za:</td>
+								<td>09:00 - 18:00 uur</td>
+							</tr>
+							<tr>
+								<td>Donderdag:</td>
+								<td>09:00 - 20:00 uur</td>
+							</tr>
+							<tr>
+								<td>Zon:</td>
+								<td>Gesloten</td>
+							</tr>
+						</table>
+					</section>
+					<img src="images/gevel.jpg" alt="gevel van een typische barbershop">
+					<fieldset id="formulier">
+						<legend>Vul uw gegevens in voor eventuele vragen:</legend>
+						<form>
+							<!-- label koppel ik hier aan een input type -->
+							<label for="naam">Naam</label>
+							<!-- required zorgt er voor dat de gebruiker het moet invullen -->
+							<input type="text" id="naam" placeholder="Naam" required>
+							<label for="mail">E-mailadres</label>
+							<input type="email" id="mail" placeholder="naam@example.nl" required>
+							<label for="mobiel">Telefoon</label>
+							<input type="text" id="mobiel" required="">
+							<label for="adres">Adres</label>
+							<input type="text" id="adres" placeholder="Adres">
+							<label for="onderwerp">Onderwerp</label>
+							<input type="text" id="onderwerp" placeholder="Onderwerp">
+							<input type="submit" name="submit" value="verzenden">
+						</form>
+					</fieldset>
+				</main>
+				<!-- Hier footer -->
+				<footer>
+					
+				</footer>
+				<script src="scripts/script.js"></script>
+			</body>
+			
+		</html>
