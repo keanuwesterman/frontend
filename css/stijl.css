@@ -1,55 +1,145 @@
 *{
 	font-family: Montserrat;
-
-}
-
-body{
 	margin: 0;
-	padding:0;
+	padding: 0;
+
 }
 
-/* Hier zorg ik dat de content in het midden blijft*/
+html, body{
+	width: 100vw;
+}
+
+Hier zorg ik dat de content in het midden blijft
+
 
 main{
-display:grid;
-  grid-auto-columns:min-content;
   justify-content:center;
-  text-align:center;
 }
 
 /* Hier begint de css voor de NAVIGATIE*/
-nav{
+
+/*waarom met position fixed , geen clickable nav meer??*/
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
+	height: 13vh;
 	background: #fff;
+    box-shadow: 0 8px 7px 0 rgba(0, 0, 0, .9);
+
 }
-nav ul{
-	width: 80%;
+
+header nav img {
+    margin-left: 0.5rem;
+}
+
+header nav ul{
 	margin:0 auto;
 	padding:0;
+	text-align: right;
+right: -100%;
+width: 100%;
+display: flex;
+position: fixed;
+height: 87vh;
+flex-direction: column;
+background-color: #00CCD2;
+top: 13vh;
+z-index: 1;
+transition: right 0.3s ease-in;
 }
-nav ul li{
+
+
+header nav ul li{
 	list-style: none;
 	display: inline-block;
-	padding:20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	border-radius: 12px;
+
 }
-nav ul li:hover{
+header nav ul li:hover{
 	background: #00CCD2;
 	text-decoration: none;
+	transition: 0.3s;
 }
-nav ul li a{
+header nav ul li a{
 	color: black;
 	text-decoration: none;
 }
 
+header nav img {
+	 width: 10rem;
+}
+
+/*Hamburger menu*/
+.burger div{
+width: 1.5em;
+height: 0.2em;
+margin: 0.3em;
+margin-right: 2em;
+background-color: black;
+transition: all 0.3s ;
+
+}
+
+.hbactive{
+	right: 0;
+}
+
+.toggle div:nth-child(1) {
+transform: rotate(-45deg) translate(0px, 11.5px);
+}
+
+.toggle div:nth-child(2) {
+opacity: 0;
+}
+.toggle div:nth-child(3) {
+transform: rotate(45deg) translate(0px, -11.5px);
+}
+
+
+
+
 /*hier begint de css voor de main*/
 	
 
-.homepagina{
-	margin: 1em;
-	position: relative;
-} 
 
-.homepagina button{
+main section:first-of-type img {
+	width: 100%;
+}
+
+ h1 {
+	padding: 1.5em 0em;
+    font-size: 1.2em;
+  color: white;
+  background-color:#00CCD2;
+  opacity: 85%;
+  text-align: center;
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
+  width: 100%;
+  position: relative;
+  bottom: 8em;
+}
+
+
+/*
+.homepagina h1:hover{
+	background-color: black;
+	transition: 1s;
+	font-size: 1.5em;
+	color: white;
+	opacity: 80%;
+	letter-spacing: 0.5em;
+}
+*/
+
+main section:first-of-type button{
 	padding:1em;
 	font-size: 1em;
 	border-radius: 12px;
@@ -57,143 +147,321 @@ nav ul li a{
 	background-color: black;
 	color: #00CCD2;
 	letter-spacing: 0.1em;
+	margin: auto;
+	display: block;
+	position: relative;
+	bottom: 4em;
+    box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
+    transform: skewX(180deg);
+
 }
 
-.homepagina button:hover{
+main section:first-of-type button:hover{
 	background-color: #00CCD2;
 	color:white;
-	transition: 2s;
-	transform: rotate(360deg);
-    box-shadow:.15em .15em .15em black;
-}
-
-.homepagina h1 {
-	padding: 1em;
-	position:relative;
-    left:0.02em; right:1em; top:12em; bottom:1em;
-    font-size: 1.4em;
-  margin:0;
-  color:white;
-  background-color:#00CCD2;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  letter-spacing: 0.25em;
-  line-height: 1.5em;
-  opacity: 80%;
-}
-
-.homepagina h1:hover{
-	background-color: black;
 	transition: 1s;
-	font-size: 1.7em;
+	box-shadow: none;
+	border-style:solid;
+	border-color: white;
+	transform: skewY(180deg);
 }
 
-#aanbod h2{
-	
+/*Prof diensten etc > section 2*/
+
+main section:nth-of-type(2) h2{
+	color: #00CCD2;
+	font-size: 1.2em;
+	margin: auto;
+	width: 85%;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: uppercase;
 }
+
+main section:nth-of-type(2) p{
+	color: black;
+	text-align: center;
+	width: 80%;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	justify-content: center;
+	margin: auto;
+	padding:1.5em;		
+}
+
+/*aanbod > section 3*/
+main section:nth-of-type(3) h2{
+text-align: center;
+padding-top: 3em;
+margin-bottom: 2em;
+}
+
+main section:nth-of-type(3) h3{
+font-size: 1em;
+margin: auto;
+}
+
 
 /* hier positioneer ik de list van mannen/vrouwen/kinder-kapsels */
-section li img{
-	border-radius: 10%;
+main section:nth-of-type(3) > ul > li > figure > img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	box-shadow: 0 8px 7px 0 rgba(0, 0, 0, .9);
+	}
 
+main section ul li figure {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
-ul li{
-	list-style-type: none;
-}
 
-ul li h3 {
-  position:relative;
-  margin:0; padding:.5em;
-  font-size:1.5em;
-  font-weight:bold;
-  color:white;
-  border-radius: 12px;
+
+main section:nth-of-type(3) > ul > li > figure > h3{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+  margin: auto;
+  font-size:1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
   background-color:#00CCD2;
-}
-
-#midden{
-	position: relative;
-}
-
-#midden h3{
-	position:absolute;
-	left: 10px;
-	top: 0px;
-	right: 10px;
-	margin:0; padding:.5em;
-  color:white;
-  background-color:#00CCD2;
-    box-shadow:.15em .15em .15em black;
-    text-align: center;
-    	    	    opacity: 90%;
-
+  width: 100%;
+text-align: center;
+  background-image:linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.9));
 
 }
 
-#centraal{
-	position: relative;
+main section ul > li > figure > img{
+	width: 100%;
+	height: 100%;
 }
 
-#centraal h3{
-	position:absolute;
-	left: 10px;
-	top: 0px;
-	right: 10px;
-	margin:0; padding:.5em;
-  color:white;
-  background-color:#00CCD2;
-    box-shadow:.15em .15em .15em black;
-    	    	    opacity: 90%;
 
-}
-/
-#z-index {
-	position: relative;
+/***********************/
+/*over lokale kapper > section 4*/
+
+main section:nth-of-type(4) img {
+	width: 100%;
+	height: 100%;	
+	margin-top: 3em;
 }
 
-#z-index ul li h3 {
-  position:relative;
-  margin:0; padding:.5em;
-  font-size:1.5em;
-  font-weight:bold;
-  color:white;
-  background-color:#00CCD2;
+main section:nth-of-type(4) h2 {
+	text-align: center;
+	color: #00CCD2;
+	text-transform: uppercase;
+    padding-top: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-#z-index h3:first-of-type {
-right:7em; top:4.45em;
-z-index: 10;
-	    box-shadow:.15em .15em .15em black;
-	    opacity: 90%;
-
-}
-
-#z-index h3:last-of-type {
-	 top:4.45em; left: 6em;
-	    box-shadow:.15em .15em .15em black;
-	    box-sizing: content-box;
-	    	    opacity: 90%;
-
-}
-
-table {
-	color: red;
+main section:nth-of-type(4) p{
+	text-align: left;
+	width: 80%;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
 	justify-content: center;
+	margin: auto;
+	padding:1.5em;	
+}
+
+/* section 5 = button */
+
+main section:nth-of-type(5) button{
+	padding:1em;
+	font-size: 1em;
+	border-radius: 12px;
+	border-style: solid;
+	border-color: #00CCD2;
+	background-color: white;
+	color: #00CCD2;
+	letter-spacing: 0.1em;
+	margin: auto;
+	display: block;
+	position: relative;
+    box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
+    transform: skewX(180deg);
+
+}
+
+main section:nth-of-type(5) button:hover{
+	background-color: #00CCD2;
+	color:white;
+	transition: 1s;
+	box-shadow: none;
+	border-style:solid;
+	border-color: white;
+}
+
+/*section 6 | tabel openingstijden*/ 
+
+main section:nth-of-type(6){
+	background-color: black;
+	position: relative;
+	top: 6em;
+}
+
+main section:nth-of-type(6) h3{
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	padding: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+main section:nth-of-type(6) table{
+	text-align: center;
+	color: white;
+	margin: auto;
+	padding-bottom: 4em;
+	line-height: 2em;
+}
+
+table tbody tr th:first-of-type{
+	font-size: 1.2em;
+	margin: auto;
+	padding-bottom: 1.5em;
+	position: relative;
+	left: 3em;
 }
 
 
-/*hier maak ik de afbeeldingen van deze list responsive*/
+#gevel {
+	width: 100%;
+}
+
+
+
+/*hier maak ik de afbeeldingen van deze list responsive
 .responsive{
 	width: 100%
 	height:auto;
+}                 */
+
+main fieldset legend {
+	font-size: 1.2em;
+	text-align: left;
+	padding: 1em;
+	background-color: #00CCD2;
+	color: white;
 }
 
-fieldset{
-	background-color: red;
 
+main fieldset form section{
+	display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    background-color: #00CCD2;
+    text-transform: uppercase;
+    color: white;
+    padding: 1em;
 }
+
+main fieldset form > section label{
+	color: white;
+	padding-top: 1.5em;
+}
+
+main fieldset form > section input{
+	padding: 0.3em;
+	border-style: solid; 
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: white;
+	background-color:#00CCD2; 
+	width: 100%;
+}
+
+main fieldset form > section input:last-of-type {
+background-color: white;
+margin-top: 4em;
+padding: 1.3em;
+font-size: 1em;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+main fieldset form > section p:first-of-type {
+	text-align: center;
+	padding-top: 2em;
+}
+
+main fieldset form > section p:last-of-type {
+	text-align: center;
+	padding-top: 2em;
+}
+
+
+
+
+
+/* CODE VOOR GALLERY */ 
+
+.wrapper{
+	text-align: center;
+} 
+
+.item:first-of-type{
+	padding-top: 2em;
+}
+
+.item:nth-of-type(2){
+	padding-top: 2em;
+}
+
+.item:nth-of-type(3){
+	padding-top: 2em;
+}
+
+.item:nth-of-type(4){
+	padding-top: 2em;
+}
+
+.item:nth-of-type(5){
+	padding-top: 2em;
+}
+.item:nth-of-type(6){
+	padding-top: 2em;
+}
+.item:nth-of-type(7){
+	padding-top: 2em;
+}
+.item:nth-of-type(8){
+	padding-top: 2em;
+}
+
+/*CODE VOOR PRIJSLIJST*/
+
+main article button{
+	padding:1em;
+	font-size: 1em;
+	border-radius: 12px;
+	border-style: none;
+	background-color: black;
+	color: #00CCD2;
+	letter-spacing: 0.1em;
+	margin: auto;
+    box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
+}
+main article button:hover{
+	background-color: #00CCD2;
+	color:white;
+	transition: 1s;
+	box-shadow: none;
+	border-style:solid;
+	border-color: white;
+}
+
+main article p>button{
+	position: relative;
+	left: 30em;
+}
+
+
+
 
 /* responsive geprobeerd te maken maar wanneer ik dit inschakel, wordt deze code als eerste opgenomen.
 Wanneer ik het inschakel dan pakt hij meteen min-width: 960x; terwijl dit niet
@@ -224,4 +492,4 @@ padding: 3.5rem 0;
 }
 @media screen and (min-width: 1440px) {
 
-} */
+}

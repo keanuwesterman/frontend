@@ -1,19 +1,25 @@
-let menu = document.querySelector('.menu')
-  menu.addEventListener('click', (e) => {
-    document.querySelector('ul').classList.toggle('active');
-  })
+// functie aanmaken
+var navSlide = () => {
+	var burger = document.querySelector('.burger');
+	var nav = document.querySelector('nav ul');
 
-var hoofdtitel = document.querySelector("section:nth-of-type(2) button");
-hoofdtitel.addEventListener("click", veranderhoofdtitel);
-function veranderhoofdtitel() {
-	let hoofdtitel = document.querySelector("section:nth-of-type(2)");
-	hoofdtitel.classList.toggle("anders")
+	burger.addEventListener('click',() =>{
+		nav.classList.toggle('hbactive');
+
+		 // activeer animatie hamburger menu draaien
+
+		 burger.classList.toggle('toggle');
+	});
 }
 
-/* voorbeeld Danny
+navSlide();
 
-1. element selecteren 
 
-2. luisteren naar event
 
-3. Functie uitvoeren 
+//  BELANGRIJK
+
+// 1. element selecteren 
+
+// 2. luisteren naar event
+
+// 3. Functie uitvoeren 

@@ -33,10 +33,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
+<!--  -->
+
+
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Wat ging goed? 
+- Voor mijn gevoel loop ik een beetje achter maar ik denk dat ik dat nog wel kan inhalen.  Ik was nog niet zeker van de keuze van surface plane of responsive maar ik kies nu in ieder geval voor responsive. Daarnaast heb ik mijn hamburgermenu kunnen maken met een animatie, dus dat was wel positief. Ook is mijn homepagina bijna klaar. 
 
+### Agenda voor meeting
+Vragen: 
+
+- Waarom sommige afbeeldingen wel in de readme in github komen te staan en de andere niet?
+- wit-ruimte achter de legend van mijn formulier 
+- hoe implementeer ik een kaart in mijn website
+- is het beter/netter om een formulier op een andere pagina te zetten?
+- Zelf nog even uitzoeken hoe media Queries werken 
+
+(Firza)
+- Code weer nachecken op semantisch correctheid
+- Onderdelen centreren
+- Het (overbodig) gebruik van mediaqueries
+- Dropdown/show more button voor de news section
+
+<!--  -->
 
 
 ## Voortgang 1 (week 3)
@@ -65,8 +85,8 @@ Zoals ik in Week 3 ook al zei wil ik te veel tegelijk doen waardoor ik de draad 
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
+- nog uitzoeken wat mijn animatie zou zijn naast hamburger menu > wellicht een pop-up wanneer iemand een afspraak wil boeken
+- met padding en % + em's spelen om positioneringen wat beter te krijgen
 
 
 ## Intake
@@ -110,6 +130,17 @@ Bij het positioneren van tekst op de afbeeldingen heb ik geprobeerd met Z-index 
 Week 3
 - Deze week begonnen met JavaScript. Binnen de opdrachten snap ik het wel (Codepen) maar toen ik dit probeerde te implementeren in mijn eigen website lukte dit niet. De bedoeling was door op een knop te drukken, twee elementen bij elkaar te laten komen met "ease-in". Alleen dat lukte niet. 
 - Ook merk ik dat ik het meeste moeite heb met het css'en en stap voor stapsgewijs, op een logische manier te werk gaan. Ik doe steeds dingen door elkaar heen. Dan weer proberen responsive te maken, dan weer bezig zijn met een formulier en dan weer een beetje Javascript proberen. Zo maak ik nu pas een begin met de 2e pagina voor de eindopdracht. Ik ga vanaf nu proberen stap voor stap te werken ipv ongestructureerd. 
+
+Week 4 
+- Na het voortgangsgesprek merkte ik dat ik nog lang niet zo ver ben als de andere. Ik heb moeite met positionering. 
+
+Ik had mijn website eerst op mobile first voor het eerste voortgangs gesprek gedaan en daarna op website grootte. Dit was niet helemaal bedoeling, dus dat weer terug verandert. 
+
+Ik wil nu graag zorgen dat mijn hoofdpagina in ieder geval responsive wordt + de form uitgewerkt. 
+
+Voor mijn formulier gebruik ik fieldset. Een van de childs van deze fieldset = legend en deze valt een beetje raar op mn formulier. Er zit een wit randje er op. Ook had ik de vraag of ik niet beter een contact formulier op een andere pagina kan doen. 
+
+Wat wel goed ging is het maken van mijn hamburger menu met een animatie er bij. Eerst heb ik divjes gebruikt voor in mn index.html. Vervolgens heb ik met flex-box gespeeld en er voor gezorgd dat mijn header nav ul verticaal buiten het beeld zou staan. Dit heb ik gedaan door right:-100px te doen.  Nu kon ik met Javascript de burger en de nav selecteren, deze laten luisteren naar de click om mijn nav te laten verschijnen (door middel van de .hbactive terug te schuiven van right -100 naar right 0. Daarna heb ik in mijn css 3 toggles toegevoegd aan het hamburger menu zodat dit kruisje animeert op moment dat ik erop klik. 
 
 
 
