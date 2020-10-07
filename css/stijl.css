@@ -33,6 +33,8 @@ header nav {
 
 header nav img {
     margin-left: 0.5rem;
+    	 width: 6rem;
+
 }
 
 header nav ul{
@@ -70,10 +72,6 @@ header nav ul li:hover{
 header nav ul li a{
 	color: black;
 	text-decoration: none;
-}
-
-header nav img {
-	 width: 10rem;
 }
 
 /*Hamburger menu*/
@@ -268,7 +266,7 @@ main section:nth-of-type(4) p{
 
 /* section 5 = button */
 
-main section:nth-of-type(5) button{
+/*main section:nth-of-type(5) button{
 	padding:1em;
 	font-size: 1em;
 	border-radius: 12px;
@@ -292,17 +290,17 @@ main section:nth-of-type(5) button:hover{
 	box-shadow: none;
 	border-style:solid;
 	border-color: white;
-}
+}*/
 
 /*section 6 | tabel openingstijden*/ 
 
-main section:nth-of-type(6){
+main section:nth-of-type(5){
 	background-color: black;
 	position: relative;
 	top: 6em;
 }
 
-main section:nth-of-type(6) h3{
+main section:nth-of-type(5) h3{
 	text-align: center;
 	font-size: 1.5em;
 	color: white;
@@ -311,7 +309,7 @@ main section:nth-of-type(6) h3{
 	letter-spacing: 0.1em;
 }
 
-main section:nth-of-type(6) table{
+main section:nth-of-type(5) table{
 	text-align: center;
 	color: white;
 	margin: auto;
@@ -329,6 +327,10 @@ table tbody tr th:first-of-type{
 
 
 #gevel {
+	width: 100%;
+}
+
+iframe{
 	width: 100%;
 }
 
@@ -436,31 +438,104 @@ main fieldset form > section p:last-of-type {
 /*CODE VOOR PRIJSLIJST*/
 
 main article button{
+	margin-top: 1em;
 	padding:1em;
-	font-size: 1em;
+	font-size: 0.5em;
 	border-radius: 12px;
 	border-style: none;
-	background-color: black;
+	background-color: white;
 	color: #00CCD2;
 	letter-spacing: 0.1em;
-	margin: auto;
-    box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
+/*    box-shadow: 0 8px 7px 0 rgba(0, 0, 0, .5);
+*/    position: relative;
+    left: 30em;
+    top: 5em;
+    display: block;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #00CCD2;
 }
+
 main article button:hover{
 	background-color: #00CCD2;
 	color:white;
 	transition: 1s;
 	box-shadow: none;
-	border-style:solid;
-	border-color: white;
+	box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
+}
+
+main article:first-of-type button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(2) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(3) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(4) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(5) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(6) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(7) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(8) button{
+	position: relative;
+	top: 9em;
+}
+
+main article:nth-of-type(9) button{
+	position: relative;
+	top: 9em;
 }
 
 main article p>button{
 	position: relative;
-	left: 30em;
+
 }
 
+main article p {
+	margin-left: 1em;
+	padding-left: 1em;
+	text-transform: uppercase;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
 
+main article p:first-of-type {
+	font-size: 0.7em;
+	padding-top: 1em;
+	padding-bottom: 2.5em;
+}
+
+main article p:last-of-type{
+		padding-bottom: 1.5em;
+		font-size: 0.6em;
+		letter-spacing: 0.1em;
+		border-bottom: solid;
+		border-color: #FCFCFC;
+}
 
 
 /* responsive geprobeerd te maken maar wanneer ik dit inschakel, wordt deze code als eerste opgenomen.
