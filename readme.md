@@ -23,7 +23,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+Toegankelijkheidstoevoegingen:
+- :active > voor linkjes en buttons. Waarom 
+
+button:active {
+-juist als iets traag verloopt, krijg je dan feedback van wat je aanklikt 
+
+
+Formulier gefixt:
+- Volgorde veranderd. = section > form > fieldset (> legend)
+
+Cleaner look:
+- padding aan de section form fieldset p aangepast om de ruimtes aan de zijkanten aan te houden. 
+
+Pop-up voor extra animatie:
+- 
 
 
 
@@ -37,18 +51,23 @@ In deze week niet heeeel veel kunnen doen door andere vakken en werk. Heb een de
 ### Agenda voor meeting
 Vragen: 
 
-- Een toggle inplementeren voor de button (show less)
+- Een toggle implementeren voor de button (show less)
 - Toegankelijkheid verhogen > hoe zet je animaties aan/uit 
 - extra animatie voor pop-up bij afspraak maken
 - responsivess evt tips?
 
 
 (Firza)
--Button niet klikbaar; kom dit door overlappende divs en/of z-indexes?
--Een toggle inplementeren voor de button (show less)
+- Button niet klikbaar; kom dit door overlappende divs en/of z-indexes?
+- Een toggle implementeren voor de button (show less)
 - evt. Javascript nachecken
 
+Verslag meeting:
 
+! Hulp sites van Lars !
+- https://css-tricks.com/css-only-carousel/
+- https://www.w3schools.com/howto/howto_js_shrink_header_scroll.asp
+- https://css-tricks.com/introduction-reduced-motion-media-query/
 
 
 <!--  -->
