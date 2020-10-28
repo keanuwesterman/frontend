@@ -39,6 +39,24 @@ Cleaner look:
 Pop-up voor extra animatie:
 - 
 
+Detailpagina:
+- iconen toevegoegd per behandeling
+- search bar toegevoegd
+
+Code opschonen:
+- main > article > button in 1 css
+- afbeeldingen in extra mapjes gestopt 
+- toegankelijkheid bij foto's / buttons / input 
+
+
+Bronnen:
+- Flaticon. (z.d.). Flaticon, the largest database of free vector icons. Geraadpleegd op 27 oktober 2020, van https://www.flaticon.com/
+
+- HairStudio Karim. (z.d.). Geraadpleegd op 27 oktober 2020, van https://partyflock.nl/location/21289:HairStudio-Karim
+
+-Page Not Found • Instagram. (z.d.). Geraadpleegd op 27 oktober 2020, van https://www.instagram.com/accounts/login/?next=/hairstudio_karim/
+
+
 
 
 ## Voortgang 3 (week 6)
