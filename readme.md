@@ -9,25 +9,36 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
 2. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table
-
-<!-- bronnen voor responsive nav -->
 3. https://www.youtube.com/watch?v=XZsuI5wyRzs
 4. https://www.bootstrapcdn.com/fontawesome/
-5. https://fontawesome.com/icons/bars?style=solid 
 
+-
+
+5. https://fontawesome.com/icons/bars?style=solid 
 6. https://partyflock.nl/location/21289:HairStudio-Karim
+7. Flaticon. (z.d.). Flaticon, the largest database of free vector icons. Geraadpleegd op 27 oktober 2020, van https://www.flaticon.com/
+8. HairStudio Karim. (z.d.). Geraadpleegd op 27 oktober 2020, van https://partyflock.nl/location/21289:HairStudio-Karim
+9. Page Not Found • Instagram. (z.d.). Geraadpleegd op 27 oktober 2020, van https://www.instagram.com/accounts/login/?next=/hairstudio_karim/
+
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Wat ging er goed? 
+In de laatste weken ben ik vooral bezig geweest met het responsive maken van mijn website. Dit heb ik gedaan door twee breakpoints als media querie te kiezen (Ipad 768 px & desktop 1200px). Dit ging vrij moeizaam en heb hier wel wat hulp bij moeten krijgen maar uiteindelijk is het redelijk goed gelukt. Daarnaast heb ik de detailpagina (prijslijst) uitgewerkt door het is css verder uit te werken en iconen toe te voegen. Dit ging ook goed. 
 
-**Screenshot(s):**
+Wat er wat minder ging?
+Vooral het plannen van tijd was voor mij een dingetje. Er gaat dan een vakantie overheen waar je denkt veel tijd over te hebben uiteindelijk naast een paar dagen leuke dingen gepland te hebben, maar daar heb ik mij OPNIEUW weer een beetje in de nesten gewerkt. Met werken en het project van 3e jaar kon ik helaas niet aan de pop-up animatie komen, wat denk ik wel te doen was. Ook had ik mijn site wat verder willen uitwerken omdat ik het graag aan de eigenaar zelf van de hairstudio wil laten zien. Wie weet voor in de toekomst. 
+
+To do's:
+
+Responsiveness:
+- breakpoint 768 px voor Ipad & 1200px oovr Desktop
 
 Toegankelijkheidstoevoegingen:
 - :active > voor linkjes en buttons. Waarom 
 
 button:active {
--juist als iets traag verloopt, krijg je dan feedback van wat je aanklikt 
+-juist als iets traag verloopt, krijg je feedback van wat je aanklikt 
 
 
 Formulier gefixt:
@@ -37,7 +48,7 @@ Cleaner look:
 - padding aan de section form fieldset p aangepast om de ruimtes aan de zijkanten aan te houden. 
 
 Pop-up voor extra animatie:
-- 
+- niet meer aan toegekomen helaas.
 
 Detailpagina:
 - iconen toevegoegd per behandeling
@@ -45,6 +56,7 @@ Detailpagina:
 
 Code opschonen:
 - main > article > button in 1 css
+- classes zoveel mogelijk weg gehaald
 - afbeeldingen in extra mapjes gestopt 
 - toegankelijkheid bij foto's / buttons / input 
 

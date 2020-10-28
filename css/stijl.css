@@ -17,9 +17,6 @@ main{
 }
 
 /* Hier begint de css voor de NAVIGATIE*/
-
-/*waarom met position fixed , geen clickable nav meer??*/
-
 header nav {
 	display: flex;
 	justify-content: space-between;
@@ -172,7 +169,7 @@ main section:first-of-type button{
 	position: relative;
 	bottom: 4em;
     box-shadow: 0 8px 7px 0 rgba(255, 255, 255, .9);
-    /*randje bij :active weghalen door ouline:none;*/
+    /*randje bij :active weghalen door outline:none;*/
     outline: none;
     appearance:none;
  }
@@ -251,16 +248,12 @@ margin: auto;
 
 
 /* hier positioneer ik de list van mannen/vrouwen/kinder-kapsels */
-main section:nth-of-type(3) > ul {
-	display: grid;
-	grid-template-columns: 1fr;
-}
+
 
 main section:nth-of-type(3) > ul > li > figure > img{
 	margin: auto;
 	display: block;
-/*	box-shadow: 0 8px 7px 0 rgba(0, 0, 0, .9);
-*/	}
+}
 
 main section:nth-of-type(3) li {
 	padding-left: 1em;
@@ -400,11 +393,10 @@ table tbody tr th:first-of-type{
 }                 */
 
 main section form fieldset legend {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-align: center;
-	position: relative;
 	margin-top: 1em;
-	padding-top: 1em;
+	padding-top: 5em;
 	line-height: 1.3em;
 	background-color: #00CCD2;
 	color: white;
@@ -440,6 +432,14 @@ main section form fieldset >input{
 	padding-left: 1em;
 	width: 20rem;
 	margin: auto;
+}
+
+main section form fieldset >input:hover{
+background-color: #FDFDFD;
+}
+
+main section form fieldset >input:focus{
+	caret-color:red;
 }
 
 main section form fieldset input:last-of-type {
@@ -556,15 +556,15 @@ text-align: center;
 
 main article button{
 	padding:1.5em;
-	font-size: 0.5em;
+	font-size: 0.7em;
 	border-radius: 12px;
 	border-style: none;
 	background-color: black;
 	color: #00CCD2;
 	letter-spacing: 0.1em;
 	position: relative;
-	top: 11.5em;
-    left: 32em;
+	top: 8em;
+    left: 30em;
    cursor: pointer;
     outline: none;
     appearance:none;
@@ -591,11 +591,6 @@ color: red;
 main article button:visited{
 background-color: grey;
 }
-
-/*main article{
-	background-color: #00CCD2;
-	opacity: 70%
-}*/
 
 main article p {
 	margin-left: 1em;
@@ -650,6 +645,15 @@ main article p > img:nth-of-type(3){
 	top: 1em;
 	display: flex;
 	margin: auto;
+}
+
+.search input:hover{
+	background-color: #BDBDBD;
+	transition: 0.2s;
+}
+
+.search input:focus{
+	background-color: lightgrey;
 }
 
 .searchTerm{
@@ -751,7 +755,8 @@ main section form fieldset legend {
 	position: relative;
 	top: 3em;
 	margin-bottom: 2em;
-	width: 35rem;
+	width: 33rem;
+	padding-top: 1em;
 }
 
 main section form fieldset{
@@ -966,7 +971,7 @@ iframe{
 }
 
 footer {
-	background-color: #00CCD2;
+	background-color:black;
 	color: #00CCD2; 
 	text-align: center;
 	padding: 3em;
@@ -1003,10 +1008,6 @@ main article p:last-of-type{
 		font-size: 1em;
 		letter-spacing: 0.1em;
 		border-color: #DBDBDB;
-}
-
-
-
 }
 
 }
